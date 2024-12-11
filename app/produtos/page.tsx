@@ -2,6 +2,7 @@
 
 import useSWR from 'swr';
 import Product from "@/app/models/interfaces";
+import Card from "@/app/components/Card/Card";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -15,20 +16,11 @@ export default function ProductsPage() {
   return (
     <div>
       <h1>Products</h1>
-      <ul style={{ listStyle: 'none', padding: 0 }}>
+      <div style={{ listStyle: 'none', padding: 0 }}>
         {data.map((product) => (
-          <li key={product.id} style={{ marginBottom: '20px', border: '1px solid #ccc', padding: '10px' }}>
-            <img src={product.image} alt={product.title} style={{ width: '100px', height: '100px' }} />
-            <h2>{product.title}</h2>
-            <p>{product.description}</p>
-            <p>Category: {product.category}</p>
-            <p>Price: ${product.price.toFixed(2)}</p>
-            <p>
-              Rating: {product.rating.rate} ({product.rating.count} reviews)
-            </p>
-          </li>
+          <Card product = {product}></Card>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
