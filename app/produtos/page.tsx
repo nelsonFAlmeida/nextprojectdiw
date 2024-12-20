@@ -45,7 +45,7 @@ export default function ProductsPage() {
   }, []);
 
   const buy = () => {
-    fetch("/api/deisishop/buy", {
+    fetch("/api/deisishop", {
       method: "POST",
       body: JSON.stringify({
         products: cart.map((product) => product.id),
@@ -58,6 +58,7 @@ export default function ProductsPage() {
       },
     })
       .then((response) => {
+        console.log(response)
         if (!response.ok) {
           throw new Error(response.statusText);
         }
@@ -66,8 +67,8 @@ export default function ProductsPage() {
       .then(() => {
         setCart([]);
       })
-      .catch(() => {
-        console.log("Erro ao comprar");
+      .catch((e) => {
+        console.log("Erro ao comprar", e);
       });
   };
 
