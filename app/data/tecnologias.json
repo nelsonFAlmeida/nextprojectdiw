@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "title": "HTML",
+      "description": "Linguagem de marcação usada para estruturar o conteúdo da web.",
+      "category": "Web Development",
+      "price": 0.00,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+      "rating": {
+        "rate": 4.5,
+        "count": 1000
+      }
+    },
+    {
+      "id": 2,
+      "title": "CSS",
+      "description": "Linguagem de estilo utilizada para estilizar páginas web.",
+      "category": "Web Development",
+      "price": 0.00,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+      "rating": {
+        "rate": 4.0,
+        "count": 850
+      }
+    },
+    {
+      "id": 3,
+      "title": "JavaScript",
+      "description": "Linguagem de programação para criar funcionalidades dinâmicas na web.",
+      "category": "Programming Language",
+      "price": 0.00,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+      "rating": {
+        "rate": 5.0,
+        "count": 1200
+      }
+    },
+    {
+      "id": 4,
+      "title": "React.js",
+      "description": "Biblioteca JavaScript para construção de interfaces de utilizador.",
+      "category": "Framework",
+      "price": 0.00,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      "rating": {
+        "rate": 4.8,
+        "count": 950
+      }
+    },
+    {
+      "id": 5,
+      "title": "Next.js",
+      "description": "Framework React para aplicações web modernas e rápidas.",
+      "category": "Framework",
+      "price": 0.00,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+      "rating": {
+        "rate": 4.9,
+        "count": 900
+      }
+    },
+    {
+      "id": 6,
+      "title": "GitHub",
+      "description": "Plataforma de versionamento e colaboração de código.",
+      "category": "Tools",
+      "price": 0.00,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+      "rating": {
+        "rate": 5.0,
+        "count": 1500
+      }
+    }
+  ]
+  
